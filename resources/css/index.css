@@ -1,0 +1,331 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+    transition: background-color .5s;
+    font-family: Futura;
+}
+
+  @font-face {
+    font-family: 'Futura';
+    font-weight: 500;
+    src: url('../assets/fonts/futura\ book\ font.ttf');
+  }
+
+.hide {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #top-icon {
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.5s;
+  }
+
+  #top-icon:hover {
+    color: rgb(224, 105, 16);
+  }
+
+  .logo {
+      height: 50px;
+      width: 50px;
+  }
+
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+  .embed-responsive {
+    box-shadow: 0 12px 30px rgba(0,6,12,.5);
+    -moz-box-shadow: 0 12px 30px rgba(0,6,12,.5);
+    -webkit-box-shadow: 0 12px 30px rgba(0,6,12,.5);
+    -khtml-box-shadow: 0 12px 30px rgba(0,6,12,.5);
+  }
+
+  .zoom {
+    transition: transform .5s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }  
+
+  section {
+      margin: 50px 0;
+  }
+
+  .page-title, .page-title-alt {
+      font-weight: bold;
+      margin-bottom: 40px;
+      font-style: italic;
+  }
+
+  .page-title-alt {
+      color: white;
+  }
+
+  .slide-title {
+    color: white;
+    font-weight: bold;
+  }
+
+  .middle {
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .page-text, .page-btn, .panel-body {
+      line-height: 1.8;
+      font-size: 16px;
+      font-size: 3vh;
+  }
+
+  .section-title {
+      margin-bottom: 20px;
+      font-weight: bold;
+  }
+
+  .index-slides {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #slide-1 {
+    background-image: url('../assets/images/foundation.jfif');
+  }
+
+  #slide-2 {
+    background-image: url('../assets/images/teams.jfif');
+  }
+
+  #slide-3 {
+    background-image: url('../assets/images/training.jfif');
+  }
+
+  #slide-4 {
+    background-image: url('../assets/images/podcast.jfif');
+  }
+
+  .carousel-controls {
+    background-color: rgba(224, 105, 16), 0.7;
+  }
+
+  .podcast {
+      background-image: url('../assets/images/podcast.jfif');
+      background-size: cover;
+      background-position: center;
+      min-height: 300px;
+  }
+
+  .bg-orange {
+    background-color: rgb(224, 105, 16);
+  }
+
+  .panel-heading {
+      padding: 0;
+  }
+
+  .panel-title {
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .panel-title a {
+      color: black;
+  }
+ 
+  .panel-title a:hover {
+    color: black !important;
+  }
+
+  .accordion-toggler {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
+
+  .contact a {
+    color: rgb(224, 105, 16);
+  }
+
+  .owner {
+    border-radius: 100%;
+    margin: 0 auto;
+  }
+
+  footer {
+      background-color: black !important;
+      color: white;
+  }  
+
+  footer a {
+      color: white;
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+nav {
+    background-color: white;
+    transition: background-color .5s;
+}
+
+#main {
+  transition: margin-right .5s;
+  overflow-x: hidden;
+}
+
+.nav-item {
+    color: black;
+    font-weight: 600;
+    padding: 16px;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid black;
+}
+
+.page-btn {
+    background-color: rgb(224, 105, 16);
+    color: white;
+    margin: 20px 0;
+    
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media (max-width: 991.98px) {
+    .web {
+        display: none !important; 
+    }
+
+    nav {
+        padding: 20px 0;
+    }
+
+    .page-content {
+        margin-top: 70px;
+    }
+
+    .donation-button {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobile {
+        display: none !important; 
+    }
+
+    .smart-scroll {
+        padding: 20px 0;
+    }
+
+    .page-content {
+        margin-top: 120px;
+    }
+
+    nav {
+        box-shadow: 0 12px 5px rgba(0,6,12,.5);
+        -moz-box-shadow: 0 12px 5px rgba(0,6,12,.5);
+        -webkit-box-shadow: 0 12px 5px rgba(0,6,12,.5);
+        -khtml-box-shadow: 0 12px 5px rgba(0,6,12,.5);
+      }
+
+    .pagination-nav {
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -khtml-box-shadow: none;
+    }
+    
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 426px) and (max-width: 575.98px) { 
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+}

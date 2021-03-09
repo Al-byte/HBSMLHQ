@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js">
+    </script>
+  <title></title>
+</head>
+<body id="home">
+  <div class="bottomMenu">
+    <div class="row text-right p-2">
+      <div class="col top-icon-bg">
+        <i class="fa fa-arrow-circle-up fa-2x" id="top-icon" title="Back to Top"></i>
+      </div>
+    </div>
+  </div>  
+  <nav class="row smart-scroll d-flex justify-content-md-around align-items-baseline no-gutters" id="nav">
+    <div class="col-md-1 web text-right">
+        <a href="./index.html"><img src="./resources/assets/images/logo.png" alt="" class="logo"></a>
+    </div>
+    <div class="col-md-9 text-center web web-nav">
+        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./HBSMLHQ.html" class="nav-item">HBSMLHQ</a>
+        <a href="./teams.html" class="nav-item">Teams</a>
+        <a href="./podcast.html" class="nav-item">Podcast</a>
+        <a href="./training.html" class="nav-item">Training</a>
+        <a href="./contact.html" class="nav-item">Contact</a>
+        <a href="./about.html" class="nav-item">About</a>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-12 mobile text-right mobile-nav">
+        <i class="fa fa-bars fa-2x mr-4" onclick="openNav()"></i>
+    </div>
+    <div id="mySidenav" class="sidenav mobile">
+        <a href="javascript:void(0)" onclick="closeNav()" class="text-right"><i class="m-2 fa fa-times"></i></a>
+        <a href="./index.html" class="nav-item px-4">
+            <div class="row">
+                <div class="col">
+                    <img src="./resources/assets/images/logo.png" alt="" class="logo">
+                </div>
+            </div>
+        </a>
+        <a href="./index.html" class="nav-item px-4">Home</a>
+        <a href="./HBSMLHQ.html" class="nav-item px-4">HBSMLHQ</a>
+        <a href="./teams.html" class="nav-item px-4">Teams</a>
+        <a href="./podcast.html" class="nav-item px-4">Podcast</a>
+        <a href="./training.html" class="nav-item px-4">Training</a>
+        <a href="./contact.html" class="nav-item px-4">Contact</a>
+        <a href="./about.html" class="nav-item px-4">About</a>
+    </div>
+</nav>
+      
+      <main id="main">
+          <div class="container page-content">
+              <section class="row">
+                  <div class="col-12">
+                    <h2 class="text-center page-title">Sample Page Title</h2>
+                    <p class="page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolores laboriosam cum ea expedita deleniti distinctio molestias. Corporis quisquam fuga est dolores iste eius? Quod, qui ducimus tenetur optio tempore rerum magnam quo nostrum blanditiis expedita labore et libero voluptates ex, reiciendis velit vitae nesciunt deserunt? Quo sed sit at.</p>          
+                  </div>
+              </section>
+          </div>
+
+          <footer class="row text-center py-4">
+              <div class="col-12">
+                <h5>HBSML HEADQUARTERS BASKETBALL</h5>
+                <a href="mailto:teamhqbasketball@gmail.com">teamhqbasketball@gmail.com</a> <br>
+                <a href="tel:8169141042">816-914-1042</a> <br>
+                <a href="./terms.html">Terms and Conditions</a> <br>
+                <a href="./privacy.html">Privacy Policy</a> <br>
+                <a href="" title="Twitter" class="mx-2 mt-3 fa fa-twitter"></a>
+                <a href="" title="Facebook" class="mx-2 mt-3 fa fa-facebook"></a>
+                <a href="" title="YouTube" class="mx-2 mt-3 fa fa-youtube"></a>
+                <a href="" title="Instagram" class="mx-2 mt-3 fa fa-instagram"></a> 
+              </div>
+          </footer>
+          
+        </main>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("main").style.marginRight = "100%";
+        document.body.style.backgroundColor = "lightgray";
+        document.getElementById("nav").style.backgroundColor = "lightgray";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
+        document.body.style.backgroundColor = "white";
+        document.getElementById("nav").style.backgroundColor = "white";
+      }
+      
+      </script>
+</body>
+</html>
